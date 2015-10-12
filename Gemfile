@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+
+# BJO changes here
+# adding bootstrap
+gem 'bootstrap-sass' , '~> 3.3.4'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
