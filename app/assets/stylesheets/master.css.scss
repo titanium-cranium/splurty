@@ -1,4 +1,6 @@
 
+@import url(https://fonts.googleapis.com/css?family=Montserrat); /* imports from google fonts */
+
 .clear {
 	clear:both;
 }
@@ -26,8 +28,9 @@
 .slogan {
 	font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 	font-style: bold;
-	padding-top: 36px;
-	font-size: 18px;
+	padding-top: 24px;
+	font-size: 24px;
+
 }
 .links {
 	padding-top: 34px;
@@ -36,6 +39,7 @@
 	font-size: 20px;
 	color: black;
 	border-bottom: 2px solid #dfdfdf;
+    font-family: 'fira_sansregular', sans-serif;
 }
 
 header {
@@ -44,4 +48,16 @@ header {
 
 hr {
 	clear:both;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: -1.5px
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: -1.5px
 }
