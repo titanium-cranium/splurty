@@ -28,9 +28,26 @@
 
 		</header>
 <hr />		<!--  hr means horizontal rule -->
-<br class="clear" />
+
+
+<br class="clear" /> <!--  Makes a break before the body      -->
+
+<div class="container">
 
 <%= yield %>
+
+    <footer class="footer">
+      <div class="container">
+      	<div class="col-xs-6">
+      		<%= link_to "Gimme me more about Iowa!", "#'", :class => 'next-quote' %>
+      	</div>
+      	<div class="col-xs-6 footer-blurb">
+       		<!-- <p class="text-muted">Built by Titanium Cranium: It's what's inside that counts...</p> -->
+       		<%= link_to "Built by Titanium Cranium: It's what's inside that counts...", "#" %> <br />
+       	</div>
+
+      </div>
+    </footer>
 
 </body>
 </html>
