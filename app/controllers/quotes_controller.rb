@@ -8,8 +8,12 @@ class QuotesController < ApplicationController
 	end
 
 	def create
-		Quote.create(quote_params)
+		@quote = Quote.create(quote_params)
+		if @quote.invalid?
+			flash[:error] = '<strong> Sayings must be between 3 and 140 characters in length. </strong>'
+		end
 		redirect_to root_path
+
 	end
 
 	private
