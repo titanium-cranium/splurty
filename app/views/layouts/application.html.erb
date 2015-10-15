@@ -9,7 +9,8 @@
 <body>
 		<header>
 			<div class="col-xs-2" >
-				<div class="circle">
+				<%= link_to root_path :class => 'logo' do %>
+        <div class="circle">
  					<br />
   						You might
   					<br />
@@ -17,12 +18,15 @@
   					<br />
   						Iowa
   				</div>
+        <% end %>
 			</div>
+     
+
 			<div class="col-xs-6 slogan">
 				<center>Surviving America's Hottest & Coldest weather since 1846!</center>
 			</div>
 			<div class="col-xs-4 links">  
-				<%= link_to 'Contribute', '#' %>
+				<%= link_to 'Contribute', new_quote_path %>
 				<%= link_to 'About', '#' %>
 			</div>
 
@@ -39,11 +43,11 @@
     <footer class="footer">
       <div class="container">
       	<div class="col-xs-6">
-      		<%= link_to "Gimme me more about Iowa!", "#'", :class => 'next-quote' %>
+      		<%= link_to "Gimme me more about Iowa!", root_path, :class => 'next-quote' %>
       	</div>
       	<div class="col-xs-6 footer-blurb">
        		<!-- <p class="text-muted">Built by Titanium Cranium: It's what's inside that counts...</p> -->
-       		<%= link_to "Built by Titanium Cranium: It's what's inside that counts...", "#" %> <br />
+       		<%= link_to "Built by Titanium Cranium: It's what's inside that counts...", "http://www.titanium-cranium.com" %> <br />
        	</div>
 
       </div>
