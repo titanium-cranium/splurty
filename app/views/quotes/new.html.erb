@@ -3,8 +3,9 @@
 <h1> What makes <i>you</i> think you're an Iowan? </h1>
 
 <%= simple_form_for @quote do |f| %>  
-	<%= f.input :saying %>
-	<%= f.input :author, label: 'Your name' %>  <!-- I changed the label here so the user will enter their own name -->
+	<%= f.input :author, label: 'Saying' %>  <!-- labels are reversed because of my error when building the database-->
+	<%= f.input :saying, label: 'Your name' %>  <!-- I changed the label here so the user will enter their own name -->
+	
 	<br />
 	<%= f.submit 'Create', :class => 'btn btn-danger' %>
 	<br />
