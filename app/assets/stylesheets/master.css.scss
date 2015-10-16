@@ -67,6 +67,13 @@
     font-size: 16px;
 }
 
+/*.modal {
+    font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+    font-style: bold;
+    padding-top: 24px;
+    font-size: 16px;
+}*/
+
 header {
 	border-top: 9px solid #222222;
 }
@@ -80,6 +87,9 @@ h1 {
     font-weight: 600;
     letter-spacing: -1.5px
 }
+h1 span {
+    color: #dddddd;
+}
 
 h2 {
     font-family: "Montserrat", sans-serif;
@@ -87,6 +97,14 @@ h2 {
     letter-spacing: -1.5px
 }
 
-h3 {
-    text-align: right;
+
+
+@media (max-width: 750px) {
+    .footer-blurb {
+        text-align:left;
+    }
+}
+
+::selection {
+    background-color: #E81A4D;
 }
