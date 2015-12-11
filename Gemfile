@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 
 # BJO changes here
+
+#adding Factory Girl for seed data 
+gem "factory_girl_rails", "~> 4.0"
+
 # adding bootstrap
 gem 'bootstrap-sass' , '~> 3.3.4'
 
